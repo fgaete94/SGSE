@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AuthPage implements OnInit {
 
   form = new FormGroup({
-    user : new FormControl('',[Validators.required]),
+    user : new FormControl('',[Validators.required]), /// agregar validacion de mail y debe ser mail
     password : new FormControl('',[Validators.required]),
   })
 
