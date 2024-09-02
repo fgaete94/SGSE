@@ -1,0 +1,7 @@
+{
+  "name": "SGSE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
