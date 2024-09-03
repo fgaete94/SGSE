@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth'
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from 'firebase/auth'
 import { User } from '../models/user.model';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { getFirestore, setDoc, doc, getDoc } from '@angular/fire/firestore';
@@ -34,15 +34,23 @@ export class FirebaseService {
     }
 
 
+    // recuperar contraseña
+    sendRecoveryEmail(email: string){
+      return sendPasswordResetEmail(getAuth(), email)
+    }
+
+
   //=======BBDD=======
 
+  // enviar un documento a la BBDD
   setDocument(path: string, data: any){
     return setDoc(doc(getFirestore(),path),data);
 
   }
 
-  getDocument(path:string){
-    return getDoc(doc(getFirestore(),path));
+ // recuperar un documento de la base de datos
+  async  getDocument(path:string){
+    return(await getDoc(doc(getFirestore(),path))).data() ;
 
   }
 
