@@ -40,9 +40,9 @@ export class ForgotPasswordPage implements OnInit {
           icon: 'alert-circle-outline'
         })
 
-        this.form.reset;
+        
         this.utilsSvc.routerLink['/auth'];
-
+        this.form.reset;
         
 
       }).catch(error => {
