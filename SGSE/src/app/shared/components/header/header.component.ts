@@ -24,7 +24,7 @@ export class HeaderComponent  implements OnInit {
     }
 
     isHomePage(): boolean {
-      return this.router.url.includes('/home'); // Aquí verificas si la ruta actual es "/home"
+      return this.router.url.includes('/main'); // Aquí verificas si la ruta actual es "/home"
     }
 
 }
