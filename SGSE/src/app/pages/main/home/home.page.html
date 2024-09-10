@@ -1,4 +1,4 @@
-<app-header  title="Home">
+<app-header title="Home">
 </app-header>
 
 <ion-content [fullscreen]="true">
@@ -7,26 +7,49 @@
     <h1><strong>Listado de Pedidos:</strong></h1>
     <ion-list [inset]="true">
       <ion-item>
-        <ion-label>Id Cliente: 228151625  Solicitante: Cencosud</ion-label>
-        <ion-button>Vizualizar</ion-button>
+        <ion-label>
+          <ul class="idpedido">Id Cliente: 228151625</ul>
+          <ul class="solicitante">Solicitante: Cencosud</ul>
+        </ion-label>
+        <ion-button>Vizualizar Detalle</ion-button>
       </ion-item>
       <ion-item>
-        <ion-label>Id Cliente: 2345345  Solicitante: doña juana</ion-label>
-        <ion-button>Vizualizar</ion-button>
+        <ion-label>
+          <ul class="idpedido">Id Cliente: 2345345</ul>
+          <ul class="solicitante">Solicitante: doña juana</ul>
+        </ion-label>
+        <ion-button>Vizualizar Detalle</ion-button>
       </ion-item>
       <ion-item>
-        <ion-label>Id Cliente:111458  Solicitante: Juan Perez</ion-label>
-        <ion-button>Vizualizar</ion-button>
+        <ion-label>
+          <ul class="idpedido">Id Cliente:111458</ul>
+         <ul class="solicitante">Solicitante: Juan Perez</ul>
+        </ion-label>
+        <ion-button>Vizualizar Detalle</ion-button>
       </ion-item>
       <ion-item>
-        <ion-label>Id Cliente: 2245586 Solicitante: Empresa Torre</ion-label>
-        <ion-button>Vizualizar</ion-button>
+        <ion-label>
+          <ul class="idpedido">Id Cliente: 2245586</ul>
+          <ul class="solicitante">Solicitante: Empresa Torre</ul>
+        </ion-label>
+        <ion-button>Vizualizar Detalle</ion-button>
       </ion-item>
       <ion-item>
-        <ion-label>Id Cliente: 557856  Solicitante: Agrupacion agropecuaria</ion-label>
-        <ion-button>Vizualizar</ion-button>
+        <ion-label>
+          <ul class="idpedido">Id Cliente: 557856</ul>
+          <ul class="solicitante">Solicitante: Agrupacion agropecuaria</ul>
+        </ion-label>
+        <ion-button>Vizualizar Detalle</ion-button>
       </ion-item>
     </ion-list>
+
+
+    <ion-button class="ion-margin-top" expand="block" mode="ios" fill="outline">
+      Generar Ruta
+      <ion-icon slot="end" name="car-outline"></ion-icon>
+    </ion-button>
   </ion-content>
- 
+
+
+
 </ion-content>
