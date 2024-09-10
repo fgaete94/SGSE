@@ -18,9 +18,11 @@ export class SignUpPage implements OnInit {
     name: new FormControl('',[Validators.required, Validators.minLength(4)]), 
   })
 
-  firebaseSvc = inject ( FirebaseService )
+  //firebaseSvc = inject ( FirebaseService )
 
-  utilsSvc = inject(UtilsService)
+  //utilsSvc = inject(UtilsService)
+
+  constructor(private firebaseSvc : FirebaseService, private utilsSvc : UtilsService ){}
 
   ngOnInit() {
   }

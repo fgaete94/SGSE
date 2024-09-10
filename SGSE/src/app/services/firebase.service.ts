@@ -11,9 +11,11 @@ import { UtilsService } from './utils.service';
 })
 export class FirebaseService {
 
-  auth = inject(AngularFireAuth)
-  firestore = inject(AngularFirestore)
-  utilsSvc = inject(UtilsService)
+  //auth = inject(AngularFireAuth)
+  //firestore = inject(AngularFirestore)
+  //utilsSvc = inject(UtilsService)
+
+  constructor(private auth : AngularFireAuth, private firestore : AngularFirestore, private utilsSvc : UtilsService){}
 
   //=======Autenticación=======
 

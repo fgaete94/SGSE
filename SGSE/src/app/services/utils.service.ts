@@ -7,9 +7,11 @@ import { LoadingController, ToastController, ToastOptions } from '@ionic/angular
 })
 export class UtilsService {
 
-  loadingCtrl = inject(LoadingController);
-  toastCtrl = inject(ToastController);
-  router = inject(Router)
+  //loadingCtrl = inject(LoadingController);
+  //toastCtrl = inject(ToastController);
+  //router = inject(Router)
+
+  constructor( private loadingCtrl :  LoadingController, private toastCtrl : ToastController, private router :  Router ){}
 
 
   //=== loading ===
